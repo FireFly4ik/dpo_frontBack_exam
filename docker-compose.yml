@@ -1,0 +1,21 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://+:5171
+    ports:
+      - "5171:5171"
+    volumes:
+      - ./backend/Data:/app/Data
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        REACT_APP_API_URL: http://localhost:5171
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
