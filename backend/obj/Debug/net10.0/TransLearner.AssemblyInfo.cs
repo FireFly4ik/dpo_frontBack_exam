@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TransLearner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53c93fcf7d9438dde311d25d6dbb4b9b1f993163")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4c5d7ce2181955c47306e64f36d690f1648324f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TransLearner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TransLearner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

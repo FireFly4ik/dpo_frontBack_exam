@@ -29,7 +29,8 @@ public static class CollectionEndpoints
                 try
                 {
                     var collection = collectionService.CreateUserCollection(request);
-                    return Results.Created($"/collections/user/{collection.Name}", collection);
+                    var encodedName = Uri.EscapeDataString(collection.Name);
+                    return Results.Created($"/collections/user/{encodedName}", collection);
                 }
                 catch (Exception exception) when (exception is ArgumentException or InvalidOperationException)
                 {
